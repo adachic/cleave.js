@@ -13,6 +13,9 @@ var Cleave = function (element, opts) {
     if (typeof element === 'string') {
         owner.element = document.querySelector(element);
         hasMultipleElements = document.querySelectorAll(element).length > 1;
+        if (hasMultipleElements){
+                console.warn(document.querySelectorAll(element))
+        }
     } else {
       if (typeof element.length !== 'undefined' && element.length > 0) {
         owner.element = element[0];
