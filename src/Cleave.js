@@ -29,7 +29,7 @@ var Cleave = function (element, opts) {
     if (hasMultipleElements) {
       try {
         // eslint-disable-next-line
-        console.warn('[cleave.js] Multiple input fields matched, cleave.js will only take the first one.');
+        console.warn('[cleave.js] Multiple input fields matched, cleave.js will only take the first one.' + owner.element);
       } catch (e) {
         // Old IE
       }
