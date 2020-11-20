@@ -14,12 +14,15 @@ var Cleave = function (element, opts) {
         owner.element = document.querySelector(element);
         hasMultipleElements = document.querySelectorAll(element).length > 1;
         if (hasMultipleElements){
-                console.warn(document.querySelectorAll(element))
+                console.warn("w0" + document.querySelectorAll(element))
         }
     } else {
       if (typeof element.length !== 'undefined' && element.length > 0) {
         owner.element = element[0];
         hasMultipleElements = element.length > 1;
+        if (hasMultipleElements){
+                console.warn("w" + document.querySelectorAll(element))
+        }
       } else {
         owner.element = element;
       }
